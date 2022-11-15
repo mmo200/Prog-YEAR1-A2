@@ -1,0 +1,18 @@
+
+def main():
+    outputTriangle()
+'''    
+def userIn(msg):
+    usrIn = int(input(msg))
+    return userIn
+'''
+def outputTriangle():
+    userIn = int(input("Please Enter in the Hieght of the Triangle: "))
+    print("*")
+    for height in range(userIn - 2 ):
+        print('*', end= 'a')
+        for space in range(height):
+            print('s', end= 'b')
+        print('*')
+    
+main()
