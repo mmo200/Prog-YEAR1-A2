@@ -1,18 +1,42 @@
+#prog year 1 (Python)
+
+#drawing square and cube 
 
 def main():
-    outputTriangle()
+    print("Welcome t")
+    outputSquare()
 '''    
 def userIn(msg):
     usrIn = int(input(msg))
     return userIn
 '''
-def outputTriangle():
-    userIn = int(input("Please Enter in the Hieght of the Triangle: "))
+def outputTriangle(usrNum1):
     print("*")
-    for height in range(userIn - 2 ):
-        print('*', end= 'a')
+    for height in range(usrNum1 - 2 ):
+        print('*', end= '')
         for space in range(height):
-            print('s', end= 'b')
+            print(' ', end= ' ')
         print('*')
+    print('* ' * (usrNum1 - 1))
+
+def outputSquare():
+    H = int(input("Please enter the Height of the Height: "))
+    W = int(input("Please enter the width of the Length: "))
+    for top in range(W):
+        print(' * ', end = '')
+        if top == W - 1:
+            print('\n')
     
+    for height in range(H - 2):
+        print(' * ', end = '')
+       
+        for space in range(top - 1):
+            print('   ', end ='')
+            if space == top - 2: 
+                print(' * \n')
+       
+    for bottom in range(W):
+        print(' * ', end = '')
+           
+
 main()
